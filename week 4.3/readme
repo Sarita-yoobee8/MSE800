@@ -1,0 +1,3 @@
+The customer can transfer money, view account details, and perform currency exchange only after logging into their account. First, the customer must log in, and then they can perform all these actions through their account. Without logging in, the customer cannot access any of these functions. Therefore, we use an «include» relationship in the use case diagram because login is a mandatory step.
+
+If the customer forgets their password, we use an «extend» relationship in the use case diagram because the Forgot Password function is optional and only occurs in a specific situation.
