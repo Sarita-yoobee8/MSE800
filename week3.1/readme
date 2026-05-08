@@ -1,0 +1,43 @@
+This image is an Entity-Relationship (ER) Diagram for a financial system. It illustrates how different data entities (like customers, accounts, and transactions) interact within a database.
+
+Customer: Represents the user of the system. A customer "has" an account.
+Account: The central hub of the diagram. It connects to the customer, transactions, and currency.
+Transaction: Records financial activity. An account is "used in" a transaction.
+Currency: Defines the monetary unit used by an account.
+Exchange Rate: Manages the conversion values between different currencies.
+
+
+The diagram uses specific notation for database keys:
+pk (Primary Key): The unique identifier for that specific table (e.g., account id).
+fk (Foreign Key): A link to a primary key in another table to create a relationship (e.g., customer id inside the Account attributes).
+
+There are a few typos errors in the labels that should be corrected for a professional schema:
+exchmage rate → Exchange Rate
+sorce → Source
+contact mu,ner → Contact Number
+
+The diagram uses specific notation for database keys:
+pk (Primary Key): The unique identifier for that specific table (e.g., account id).
+fk (Foreign Key): A link to a primary key in another table to create a relationship (e.g., customer id inside the Account attributes).
+
+Customer
+This is merely your online persona. Your phone number, email address, and name are stored by the system. To prevent the bank from confusing two individuals with the same name, each customer is given a unique ID.
+
+Account
+Every customer has an account. The real "math" takes place here. It keeps:
+The Balance: The current amount of money in there.
+The Type: Is it a checking or savings account?
+The Link: In order for the system to determine precisely whose money it is, it uses a "Foreign Key" to point back to the customer.
+
+
+Transaction
+A transaction occurs whenever you pay a bill or purchase coffee.
+The amount and the status (was the payment successful or unsuccessful) are recorded.
+
+It "points" to the Account, which is important. By doing this, a history is created that shows you where your money has been spent.
+
+Currency and Exchange
+The system requires a translator because different nations use different currencies.
+Currency: Describes what "USD" or "NZD" are.
+
+Exchange Rate: The "Translator." It determines the conversion price (e.g., how many rupees you get for one dollar) by comparing two distinct currencies.
