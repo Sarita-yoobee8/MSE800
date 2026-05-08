@@ -1,0 +1,82 @@
+
+Activity 3.1
+
+
+This diagram is an Entity Relationship (ER) Diagram representing a simple Student–Course Management System.
+Main Entities
+There are 2 tables
+1>Student
+2>Course
+
+College is relationship between 2 tables ie: student and Course
+It shows that:
+Students are connected to courses through the college.
+A student can enroll in courses offered by the college.
+
+
+A student belongs to a course.
+One course can have many students.
+Relationship type: 1 : N
+
+
+The purpose of this ER diagram is to:
+organize student and course information
+show how students relate to courses
+help design a database for a college management system
+
+
+
+Activity 3.2
+This diagram shows an Entity Relationship (ER) Diagram for a College Management System. It represents the main entities, their attributes, and the relationships between them.This ER diagram is used to:
+
+-design a college database system
+-manage student, course, college, and lecturer data
+-show relationships between entities
+
+
+1> Student
+
+Represents students enrolled in the college.
+
+Attributes:Stud_ID (PK) – Unique student ID
+Stud_name – Student name
+Stud_email – Student email
+Relationship:
+A student belongs to a course.
+
+
+2> Course
+Represents academic courses offered by the college.
+
+Attributes:
+Crse_id (PK) – Unique course ID
+Crse_name – Course name
+Relationships:
+Students belong to a course
+Courses are offered by the college
+
+
+
+ 3>College
+Represents the college institution.
+
+Attributes:
+College_ID (PK) – Unique college ID
+College_name – Name of the college
+College_location – College location
+Relationships:
+The college offers courses
+The college has lecturers
+
+
+4>Lecturer
+Represents lecturers/teachers in the college.
+
+Attributes:
+Lec_id – Lecturer ID
+Lec_name – Lecturer name
+Lec_contact – Lecturer contact number
+Lec_email – Lecturer email
+Lec_address – Lecturer address
+Relationship:
+Lecturers teach in the college.
